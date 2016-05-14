@@ -8,12 +8,13 @@ import (
 	"os"
 )
 
-func Upload(filepath string, md5 string, url string) (err error) {
+func Upload(filepath string, md5 string, secretKey string, url string) (err error) {
 	buf := new(bytes.Buffer)
 	w := multipart.NewWriter(buf)
 
 	addFileField(w, "file", filepath)
 	addField(w, "md5", md5)
+	addField(w, "key", secretKey)
 
 	req, err := http.NewRequest("POST", url, buf)
 	if err != nil {
