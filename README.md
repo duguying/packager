@@ -1,4 +1,4 @@
-# packager [![Build Status](https://travis-ci.org/duguying/packager.svg?branch=master)](https://travis-ci.org/duguying/packager) [![Coverage Status](https://coveralls.io/repos/github/duguying/packager/badge.svg?branch=master)](https://coveralls.io/github/duguying/packager?branch=master)
+# packager [![Build Status](https://travis-ci.org/duguying/packager.svg?branch=master)](https://travis-ci.org/duguying/packager)
 
 packager is a tool for you to upload software archive from a ci.
 
